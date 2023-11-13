@@ -1,14 +1,14 @@
 class Processor{
     static Process(data){
-        var separate = data.split("\r\n");
+        var a = data.split("\r\n");
         var rows = [];
 
-        separate.forEach(row => {
+        a.forEach(row => {
             var arr = row.split(",");
             rows.push(arr);
         });
         
-        console.log(rows);
+       return rows;
     }
 }
 
